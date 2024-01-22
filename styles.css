@@ -128,3 +128,14 @@ form h3 {
   flex-shrink: 0;
   gap: 4px;
 }
+
+/* Mobiles */
+@media (max-width: 460px) {
+  .grocery-item {
+    max-width: 300px;
+    width: 285px;
+  }
+  .form-control {
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(197, 220, 238);
+  color: rgb(16, 42, 66);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8vh;
+  background: #c1adad;
+  padding: 2% 4%;
+  text-align: center;
+  border: 0;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+.form-control {
+  display: flex;
+  width: 30vw;
+}
+#grocery {
+  width: 100%;
+  font-size: 15px;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  background: rgb(241, 245, 248);
+  font-weight: 600;
+}
+.add-btn {
+  border: 0;
+  padding: 6px 18px;
+  border-radius: 0 10px 10px 0;
+  background: rgb(102, 216, 216);
+  font-size: 16px;
+  font-weight: 700;
+}
+.add-btn:hover,
+.clear-btn:hover {
+  background: rgb(7, 158, 158);
+  color: black;
+}
+form h3 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.clear-btn {
+  background: rgb(33, 57, 80);
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.alert-danger {
+  color: #b31323;
+  background: #f8d7da;
+  border-radius: 4px;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+  border-radius: 4px;
+}
+.grocery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0 6px;
+  max-width: 400px;
+  width: 400px;
+}
+.grocery-item:hover {
+  background: rgb(206, 203, 203);
+  border-radius: 8px;
+}
+.title {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.edit-btn {
+  color: rgb(37, 187, 50);
+  font-size: 15px;
+}
+.delete-btn {
+  color: rgb(187, 37, 37);
+  font-size: 14px;
+}
+.btn-container {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+/* Mobiles */
+@media (max-width: 460px) {
+  .grocery-item {
+    max-width: 300px;
+    width: 285px;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
